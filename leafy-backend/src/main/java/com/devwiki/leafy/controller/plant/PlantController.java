@@ -24,6 +24,7 @@ public class PlantController {
      */
     @GetMapping("")
     public ResponseEntity<List<PlantDetailDto>> getAllPlants() {
+        // github action test !
         List<PlantDetailDto> plantDetailDtoList = plantService.getAllPlants();
         return new ResponseEntity<>(plantDetailDtoList, HttpStatus.OK);
     }
